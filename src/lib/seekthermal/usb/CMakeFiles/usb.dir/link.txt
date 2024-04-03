@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libseekthermal-usb.so -o libseekthermal-usb.so CMakeFiles/usb.dir/context.cpp.o CMakeFiles/usb.dir/error.cpp.o CMakeFiles/usb.dir/interface.cpp.o CMakeFiles/usb.dir/protocol.cpp.o CMakeFiles/usb.dir/request.cpp.o  -ludev -lusb-1.0 

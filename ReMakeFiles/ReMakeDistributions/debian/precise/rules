@@ -1,0 +1,25 @@
+#! /usr/bin/make -f
+export DH_OPTIONS
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DREMAKE_DISTRIBUTE_ALIAS=precise -DCMAKE_BUILD_TYPE= -DLIBSEEKTHERMAL_GIT_REVISION=6
+
+override_dh_pysupport:
+	
+
+override_dh_installdocs:
+	
+
+override_dh_installchangelogs:
+	
+
+override_dh_auto_install:
+	DESTDIR=debian/libseekthermal cmake -DCOMPONENT=default -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake
+	DESTDIR=debian/libseekthermal-dev cmake -DCOMPONENT=dev -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake
+	DESTDIR=debian/libseekthermal-doc cmake -DCOMPONENT=doc -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake
+	DESTDIR=debian/libseekthermal-gui cmake -DCOMPONENT=gui -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake
+	DESTDIR=debian/libseekthermal-udev cmake -DCOMPONENT=udev -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake
+	DESTDIR=debian/libseekthermal-utils cmake -DCOMPONENT=utils -P obj-$(DEB_BUILD_GNU_TYPE)/cmake_install.cmake

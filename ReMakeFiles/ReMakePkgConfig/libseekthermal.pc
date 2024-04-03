@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+include_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${include_prefix}/include/seekthermal
+
+Name: libseekthermal
+Description: Driver library for Seek Thermal imaging devices
+Version: 0.1-6
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lseekthermal-base  -lseekthermal-command  -lseekthermal-aaa  -lseekthermal-usb  -lseekthermal

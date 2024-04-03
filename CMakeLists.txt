@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
+project(libseekthermal)
 
 include(ReMake)
 
@@ -36,7 +37,7 @@ remake_pack_deb(
 remake_pack_deb(
   COMPONENT utils
   DESCRIPTION "utilities"
-  DEPENDS libseekthermal libpng12-0
+  DEPENDS libseekthermal libpng-dev
 )
 remake_pack_deb(
   COMPONENT gui

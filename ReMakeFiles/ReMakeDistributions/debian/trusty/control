@@ -1,0 +1,85 @@
+Source: libseekthermal
+Section: libs
+Priority: extra
+Maintainer: Ralf Kaestner <ralf.kaestner@gmail.com>
+Homepage: http://github.com/ethz-asl/libseekthermal
+Standards-Version: 4.5.0
+Build-Depends: libboost-chrono-dev, libudev-dev, libusb-1.0-0-dev, libpng12-dev, libqt4-dev, remake, doxygen, pkg-config, debhelper (>= 7), cmake
+
+Package: libseekthermal
+Architecture: any
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices
+
+Package: libseekthermal-dev
+Architecture: any
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices (development headers)
+
+Package: libseekthermal-doc
+Architecture: all
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices (documentation)
+
+Package: libseekthermal-gui
+Architecture: any
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices (GUI)
+
+Package: libseekthermal-udev
+Architecture: any
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices (udev rules)
+
+Package: libseekthermal-utils
+Architecture: any
+Depends: # Determined by build system
+Pre-Depends: # Determined by build system
+Recommends: 
+Suggests: 
+Enhances: 
+Breaks: 
+Conflicts: 
+Replaces: 
+Provides: 
+Description: Driver library for Seek Thermal imaging devices (utilities)
